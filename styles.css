@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: #7E22CE;
+    --nearblack: rgba(0, 0, 0, 0.733);
+}
+
+
+#navbar {
+    z-index: 1;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    min-height: 10vh;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+
+#navbar ul {
+    display: flex;
+    gap: 1.8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar h1 {
+    color: var(--purple);
+    font-size: 2rem;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: var(--nearblack);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    border-bottom: 2px solid var(--purple);
+}
+
+#welcome-section {
+    height: calc(100vh - 10vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+}
+
+#welcome-section h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#welcome-section p {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--purple);
+}
+
+
+.theme {
+    border: none;
+    background: #fff;
+    color: var(--purple);
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.purple {
+    color: var(--purple);
+}
+
+#projects,
+#reviews {
+    max-width: 80vw;
+    margin: 10px auto;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-tile h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+
+.cards {
+    display: grid;
+    gap: 3rem;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cards>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 24rem;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 4px 5px 10px #6200ff7d;
+    ;
+}
+
+
+.card_img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ci {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.cards h1 {
+    margin: 1rem auto;
+}
+
+.cards button {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    background: var(--purple);
+    border: none;
+}
+
+.cards button>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#projects>a {
+    color: var(--purple);
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 2rem;
+    font-weight: bold;
+}
+
+#projects a:hover {
+    text-decoration: 2px solid underline rgb(220, 20, 210);
+}
+
+hr {
+    margin: 1rem auto;
+}
+
+.boxes {
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+}
+
+.box {
+    width: 50%;
+    background: rgb(239 221 255);
+    color: var(--nearblack);
+    font-weight: 500;
+    padding: 2rem 1rem;
+}
+
+
+#reviews>h1 {
+    font-size: 2rem;
+    margin: 2rem auto;
+}
+
+.box>p {
+    margin: 1.5rem auto;
+}
+
+
+footer {
+    background: var(--purple);
+    color: #fff;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+
+@media (max-width: 1024px) {
+    .cards {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: auto;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    #navbar {
+        padding: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
