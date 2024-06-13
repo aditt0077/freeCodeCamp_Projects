@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Rubik", sans-serif;
+    width: 100vw;
+    background-color: #f1efef; 
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 20vh;
+    flex-wrap: wrap;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+
+#img-div{
+    background-color: #fff; 
+    padding: 0 24px;
+}
+
+img{
+    display: block;
+}
+
+#img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #fff;
+    font-size: 12px;
+}
+
+#image{
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption{
+    margin: 20px auto;
+}
+
+section{
+   width: 50%;
+}
+
+section > h3{
+    padding: 50px 0;
+    text-align: center;
+}
+
+section ul li {
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.quote p:first-child{
+    font-weight: 300;
+    margin: 25px auto;
+   
+}
+
+
+.footer{
+    margin: 30px 15px;
+    text-align: center;
+}
